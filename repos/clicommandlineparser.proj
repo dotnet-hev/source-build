@@ -19,6 +19,7 @@
     <BuildCommandArgs>$(BuildCommandArgs) -ci</BuildCommandArgs>
 
     <BuildCommandArgs>$(BuildCommandArgs) /p:DotNetPackageVersionPropsPath=$(PackageVersionPropsPath)</BuildCommandArgs>
+    <BuildCommandArgs>$(BuildCommandArgs) /p:DisableCrossgen=true /p:PortableBuild=true</BuildCommandArgs>
 
     <BuildCommand>$(ProjectDirectory)build$(ShellExtension) $(BuildCommandArgs)</BuildCommand>
     <DependencyVersionInputRepoApiImplemented>false</DependencyVersionInputRepoApiImplemented>

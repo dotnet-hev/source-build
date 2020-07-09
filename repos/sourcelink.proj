@@ -8,6 +8,7 @@
     <BuildCommandArgs>$(BuildCommandArgs) $(FlagParameterPrefix)binaryLog</BuildCommandArgs>
     <BuildCommandArgs>$(BuildCommandArgs) $(FlagParameterPrefix)ci</BuildCommandArgs>
     <BuildCommandArgs>$(BuildCommandArgs) $(FlagParameterPrefix)warnAsError $(ArcadeFalseBoolBuildArg)</BuildCommandArgs>
+    <BuildCommandArgs>$(BuildCommandArgs) /p:DisableCrossgen=true /p:PortableBuild=true</BuildCommandArgs>
     <BuildCommand>$(ProjectDirectory)build$(ShellExtension) $(BuildCommandArgs)</BuildCommand>
 
     <GlobalJsonFile>$(ProjectDirectory)global.json</GlobalJsonFile>

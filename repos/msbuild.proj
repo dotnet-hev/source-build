@@ -23,6 +23,7 @@
     <BuildCommandArgs>$(BuildCommandArgs) -v $(LogVerbosity)</BuildCommandArgs>
     <BuildCommandArgs>$(BuildCommandArgs) -bl</BuildCommandArgs>
     <BuildCommandArgs>$(BuildCommandArgs) -ci</BuildCommandArgs>
+    <BuildCommandArgs>$(BuildCommandArgs) /p:DisableCrossgen=true /p:PortableBuild=true</BuildCommandArgs>
 
     <BuildCommand>$(ProjectDirectory)build$(ShellExtension) $(BuildCommandArgs)</BuildCommand>
 

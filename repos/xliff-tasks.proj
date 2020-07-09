@@ -8,6 +8,7 @@
     <BuildCommandArgs>$(BuildCommandArgs) /flp:Verbosity=Diag</BuildCommandArgs>
     <BuildCommandArgs>$(BuildCommandArgs) /bl</BuildCommandArgs>
     <BuildCommandArgs>$(BuildCommandArgs) $(RedirectRepoOutputToLog)</BuildCommandArgs>
+    <BuildCommandArgs>$(BuildCommandArgs) /p:DisableCrossgen=true /p:PortableBuild=true</BuildCommandArgs>
 
     <BuildCommand>$(DotnetToolCommand) $(BuildCommandArgs)</BuildCommand>
 
